@@ -106,7 +106,7 @@ public class WifiConnections extends Activity {
                 
             }
              
-            mainText.setText(ssid);  
+            mainText.setText(ssid+"ist meine ssid");  
         }
          
     }
