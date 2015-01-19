@@ -100,9 +100,13 @@ public class WifiConnections extends Activity {
                 sb.append(new Integer(i+1).toString() + ". ");
                 sb.append((wifiList.get(i)).toString());
                 sb.append("\n\n");
+                
+                WifiInfo wifiInfo = mainWifi.getConnectionInfo();
+        		ssid = wifiInfo.getSSID();
+                
             }
              
-            mainText.setText(sb);  
+            mainText.setText(ssid);  
         }
          
     }
